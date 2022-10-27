@@ -24,8 +24,11 @@
                   <label for="productDesc" class="form-label">Product Description</label>
                   <textarea class="form-control" id="productDesc" rows="3"></textarea>
                 </div>
-              <button type="button" onclick="insertProduct();" class="btn btn-primary">Save</button>
+              <button type="button" onclick="insertProduct();" id="submit" class="btn btn-primary">Save</button>
 
+              <div class="my-3 d-flex justify-content-center">
+                <input type="text" id="searchInput" onkeyup="productSerach(this.value)" class="form-control w-50" placeholder="product search...">
+              </div>
 
               <div class="my-5">
                 <table class="table">
