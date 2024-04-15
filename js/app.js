@@ -18,7 +18,7 @@ displayProducts(products);
 function insertProduct()
 {
 
-    if(btn.innerText == "save")
+    if(btn.innerText.toLocaleLowerCase() == "save")
     {
         var product = 
             {
